@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №12</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Галерея (CSS Grid)</h2>
+
+    <section class="gallery">
+        <div class="gallery-item item-1">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Гори">
+        </div>
+        <div class="gallery-item item-2">
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=800&q=80" alt="Захід сонця">
+        </div>
+        <div class="gallery-item item-3">
+            <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=80" alt="Ліс">
+        </div>
+        <div class="gallery-item item-4">
+            <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&q=80" alt="Дерева">
+        </div>
+        <div class="gallery-item item-5">
+            <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&q=80" alt="Водоспад">
+        </div>
+        <div class="gallery-item item-6">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="Дорога">
+        </div>
+    </section>
+
+    <h2>Відгуки (Swiper.js)</h2>
+
+    <div class="swiper-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <p>CSS Grid дуже зручний для складних макетів. Раніше витрачав багато часу на Flexbox, тепер усе простіше.</p>
+                    <span>— Андрій, Frontend Developer</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Swiper.js підключається швидко, не потребує jQuery і добре працює на мобільних пристроях.</p>
+                    <span>— Марина, UI Designer</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Breakpoints у Swiper дозволяють легко налаштувати кількість слайдів для різних екранів.</p>
+                    <span>— Олексій, Web Developer</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <p>Властивість grid-column: span 2 дає можливість робити красиві bento-сітки без зайвого коду.</p>
+                    <span>— Наталія, студентка</span>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!--
+
+1. Що означає одиниця виміру 1fr?
+fr означає fraction, тобто частку доступного простору в сітці. Одиниця 1fr говорить браузеру: “візьми одну частку вільного простору серед усіх колонок або рядків”.
+
+2. Як змусити елемент Grid зайняти 3 стовпчики по ширині?
+Щоб елемент займав декілька колонок, використовують властивість grid-column: span N;, де N — кількість колонок.
+
+3. Чому для слайдера краще використовувати бібліотеку (Swiper), а не писати JS з нуля?
+Готові бібліотеки економлять час і забезпечують стабільність. Swiper вже містить логіку: прокрутку, свайпи для мобільних, пагінацію, стрілки, автопрокрутку та адаптивність.
+
+4. Які файли потрібно підключити, щоб Swiper запрацював?
+
+CSS Swiper — для стилів слайдера та стрілок:
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+JS Swiper — для роботи функціоналу слайдера:
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+Після цього потрібно ініціалізувати Swiper у власному JS-файлі або в <script> на сторінці.
+-->
