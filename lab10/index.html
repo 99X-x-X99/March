@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Мій сайт</h1>
+</header>
+
+<div class="container">
+
+    <h2>Про нас</h2>
+    <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="float-img" alt="img">
+        Це приклад тексту, який обтікає зображення. CSS властивість float дозволяє
+        розташувати картинку зліва або справа, а текст автоматично її обтікає.
+        Це використовується для створення статей, блогів та описів.
+        Текст продовжується, щоб було добре видно ефект обтікання знизу.
+    </p>
+
+    <div style="clear: both;"></div>
+
+    <h2>Товари</h2>
+
+    <div class="product-item">
+        <span class="badge">SALE</span>
+        <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg" alt="">
+        <h3>Ноутбук</h3>
+        <p>Потужний ноутбук</p>
+        <button>Купити</button>
+    </div>
+
+    <div class="product-item">
+        <span class="badge">NEW</span>
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-card-40-17-202509_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=WVVFRzUzVk1oblJhbW9PbGNSU25jckJGdUIrY1B0R3cwWTRVMzRnT1RWUmZMQnBkTWowcTVzai9uUEgzVDdYM3NtS0NkZnlUKzBRdlpRai9zMDR0cTQ2SzdvNlo3RnBaVmExOWFYbG5HREhZVGtLdlpieFJ0bE9GNURYSnYrUWw" alt="">
+        <h3>Смартфон</h3>
+        <p>Сучасний телефон</p>
+        <button>Купити</button>
+    </div>
+
+    <div class="product-item">
+        <span class="badge">TOP</span>
+        <img src="https://mobileplanet.ua/uploads/product/2020-12-8/magazin-mobileplanet-airpods-max-silver-1902041.jpg" alt="">
+        <h3>Навушники</h3>
+        <p>Якісний звук</p>
+        <button>Купити</button>
+    </div>
+
+</div>
+
+<a href="#" class="back-to-top">↑</a>
+
+</body>
+</html>
+
+<!--
+1. Чим position: absolute відрізняється від position: fixed?
+position: absolute позиціонується відносно найближчого батьківського елемента з position: relative.
+position: fixed позиціонується відносно вікна браузера і не рухається при скролі.
+
+2. Що робить z-index і для яких елементів працює?
+z-index визначає, який елемент буде зверху, а який знизу.
+Працює тільки для елементів з position (relative, absolute, fixed, sticky).
+
+3. Як "очистити" обтікання після float?
+Використовується властивість clear: both;
+Вона змушує елемент початися з нового рядка.
+
+4. Яка різниця між sticky та fixed?
+sticky працює всередині контейнера і "прилипає" при скролі.
+fixed завжди закріплений на екрані і не залежить від контейнера.
+-->
