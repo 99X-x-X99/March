@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+    <h2>Напишіть нам</h2>
+    <form action="#" method="POST">
+        
+        <div>
+            <label for="username">Ваше ім'я:</label>
+            <input type="text" id="username" name="username" placeholder="Введіть ім'я" required>
+        </div>
+
+        <div>
+            <label for="useremail">Ваш Email:</label>
+            <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required>
+        </div>
+
+        <div>
+            <label for="userpass">Пароль (для реєстрації):</label>
+            <input type="password" id="userpass" name="password">
+        </div>
+
+        <div>
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </div>
+
+        <div>
+            <label for="topic">Тема звернення:</label>
+            <select id="topic" name="topic">
+                <option value="support">Техпідтримка</option>
+                <option value="sales">Відділ продажів</option>
+                <option value="other">Інше</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Ваша стать:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label style="display:inline" for="male">Чоловік</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label style="display:inline" for="female">Жінка</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label style="display:inline" for="agree">Я даю згоду на обробку даних</label>
+        </div>
+
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+    </form>
+</section>
+
+</body>
+</html>
+
+<!--
+
+1. Для чого потрібен атрибут placeholder?
+    Він створює коротку підказку (приклад введення) сірим кольором всередині поля. 
+    Цей текст автоматично зникає, як тільки користувач починає вводити власні дані, допомагаючи зрозуміти, що саме потрібно написати.
+2. У чому різниця між checkbox (квадратик) та radio (кружечок)?
+    checkbox дозволяє вибрати кілька варіантів одночасно (або не вибирати жодного). 
+    radio призначений для вибору лише одного варіанту з групи (за умови, що у них однаковий атрибут name); як тільки ти вибираєш інший "кружечок", попередній автоматично вимикається.
+3. Що робить тег <label> і навіщо йому атрибут for?
+    ег <label> створює текстовий підпис до елемента форми. Атрибут for пов'язує цей текст із конкретним полем через його id. 
+    Це покращує юзабіліті: якщо клікнути на текст підпису, курсор автоматично перестрибне у відповідне поле вводу.
+4. Чим відрізняється <input type="text"> від <textarea>?
+    <input type="text"> — це однорядкове поле для коротких даних (наприклад, ім'я або логін). 
+    <textarea> — це багаторядкова область для великих обсягів тексту (наприклад, коментар або лист), розмір якої користувач часто може змінювати вручну, потягнувши за кутик.
+
+-->
