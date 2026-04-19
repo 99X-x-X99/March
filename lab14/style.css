@@ -1,0 +1,18 @@
+.my-svg-icon {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.my-svg-icon:hover circle {
+    fill: #dc3545; 
+    stroke: #dc3545;
+    transform: scale(1.1); 
+    transform-origin: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
